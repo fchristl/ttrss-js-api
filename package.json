@@ -4,6 +4,7 @@
   "description": "A primitive implementation of the TinyTinyRSS API in JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "https://github.com/fchristl/ttrss-js-api",
   "scripts": {
     "test": "mocha -r ts-node/register 'src/**/*.test.ts'",
     "generate-docs": "typedoc --mode file --exclude \"**/*.impl.ts\" --exclude 'src/api-response-types/*.ts' --exclude '**/api.impl.ts' ",
@@ -31,10 +32,5 @@
   },
   "dependencies": {
     "axios": "^0.19.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run generate-docs"
-    }
   }
 }
