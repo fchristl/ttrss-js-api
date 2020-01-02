@@ -45,7 +45,7 @@ A single article with its content.
 
 *Inherited from [Headline](headline.md).[always_display_attachments](headline.md#always_display_attachments)*
 
-*Defined in [api-types/headline.ts:22](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L22)*
+*Defined in [api-types/headline.ts:22](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L22)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **attachments**? : *[Attachment](attachment.md)[]*
 
-*Defined in [api-types/article.ts:8](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/article.ts#L8)*
+*Defined in [api-types/article.ts:8](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/article.ts#L8)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Inherited from [Headline](headline.md).[author](headline.md#author)*
 
-*Defined in [api-types/headline.ts:23](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L23)*
+*Defined in [api-types/headline.ts:23](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L23)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [Headline](headline.md).[comments_count](headline.md#comments_count)*
 
-*Defined in [api-types/headline.ts:20](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L20)*
+*Defined in [api-types/headline.ts:20](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L20)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 *Inherited from [Headline](headline.md).[comments_link](headline.md#comments_link)*
 
-*Defined in [api-types/headline.ts:21](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L21)*
+*Defined in [api-types/headline.ts:21](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L21)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 *Inherited from [Headline](headline.md).[content](headline.md#content)*
 
-*Defined in [api-types/headline.ts:27](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L27)*
+*Defined in [api-types/headline.ts:27](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L27)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 *Inherited from [Headline](headline.md).[feed_id](headline.md#feed_id)*
 
-*Defined in [api-types/headline.ts:16](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L16)*
+*Defined in [api-types/headline.ts:16](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L16)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 *Inherited from [Headline](headline.md).[feed_title](headline.md#feed_title)*
 
-*Defined in [api-types/headline.ts:19](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L19)*
+*Defined in [api-types/headline.ts:19](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L19)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 *Inherited from [Headline](headline.md).[guid](headline.md#guid)*
 
-*Defined in [api-types/headline.ts:8](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L8)*
+*Defined in [api-types/headline.ts:8](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L8)*
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 *Inherited from [Headline](headline.md).[id](headline.md#id)*
 
-*Defined in [api-types/headline.ts:7](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L7)*
+*Defined in [api-types/headline.ts:7](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L7)*
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 *Inherited from [Headline](headline.md).[is_updated](headline.md#is_updated)*
 
-*Defined in [api-types/headline.ts:13](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L13)*
+*Defined in [api-types/headline.ts:13](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L13)*
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from [Headline](headline.md).[labels](headline.md#labels)*
 
-*Defined in [api-types/headline.ts:18](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L18)*
+*Defined in [api-types/headline.ts:18](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L18)*
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 *Inherited from [Headline](headline.md).[lang](headline.md#lang)*
 
-*Defined in [api-types/headline.ts:26](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L26)*
+*Defined in [api-types/headline.ts:26](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L26)*
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 *Inherited from [Headline](headline.md).[link](headline.md#link)*
 
-*Defined in [api-types/headline.ts:15](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L15)*
+*Defined in [api-types/headline.ts:15](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L15)*
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 *Inherited from [Headline](headline.md).[marked](headline.md#marked)*
 
-*Defined in [api-types/headline.ts:10](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L10)*
+*Defined in [api-types/headline.ts:10](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L10)*
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 *Inherited from [Headline](headline.md).[note](headline.md#note)*
 
-*Defined in [api-types/headline.ts:25](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L25)*
+*Defined in [api-types/headline.ts:25](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L25)*
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 *Inherited from [Headline](headline.md).[published](headline.md#published)*
 
-*Defined in [api-types/headline.ts:11](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L11)*
+*Defined in [api-types/headline.ts:11](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L11)*
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 *Inherited from [Headline](headline.md).[score](headline.md#score)*
 
-*Defined in [api-types/headline.ts:24](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L24)*
+*Defined in [api-types/headline.ts:24](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L24)*
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 *Inherited from [Headline](headline.md).[tags](headline.md#tags)*
 
-*Defined in [api-types/headline.ts:17](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L17)*
+*Defined in [api-types/headline.ts:17](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L17)*
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 *Inherited from [Headline](headline.md).[title](headline.md#title)*
 
-*Defined in [api-types/headline.ts:14](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L14)*
+*Defined in [api-types/headline.ts:14](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L14)*
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 *Inherited from [Headline](headline.md).[unread](headline.md#unread)*
 
-*Defined in [api-types/headline.ts:9](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L9)*
+*Defined in [api-types/headline.ts:9](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L9)*
 
 ___
 
@@ -253,4 +253,4 @@ ___
 
 *Inherited from [Headline](headline.md).[updated](headline.md#updated)*
 
-*Defined in [api-types/headline.ts:12](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L12)*
+*Defined in [api-types/headline.ts:12](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-types/headline.ts#L12)*

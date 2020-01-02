@@ -18,4 +18,4 @@
 
 • **unread**: *string*
 
-*Defined in [api-response-types/GetUnreadResponse.ts:2](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-response-types/GetUnreadResponse.ts#L2)*
+*Defined in [api-response-types/GetUnreadResponse.ts:2](https://github.com/fchristl/ttrss-js-api/blob/2ed851a/src/api-response-types/GetUnreadResponse.ts#L2)*
