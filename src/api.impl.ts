@@ -75,6 +75,15 @@ export class ApiImpl implements Api {
         if (options?.sinceId != null) {
             requestOptions.since_id = options.sinceId;
         }
+        if (options?.includeAttachments != null) {
+            requestOptions.include_attachments = options.includeAttachments;
+        }
+        if (options?.showContent != null) {
+            requestOptions.show_content = options.showContent;
+        }
+        if (options?.showExcerpt != null) {
+            requestOptions.show_excerpt = options.showExcerpt;
+        }
 
         const headlines = await this.makeRequest<GetHeadlinesResponse>('getHeadlines', requestOptions);
         for (const headline of headlines) {

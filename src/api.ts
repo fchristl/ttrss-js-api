@@ -11,8 +11,11 @@ export interface GetFeedsOptions {
 
 export interface GetHeadlinesOptions {
     feedId?: number;
-    sinceId?: number;
+    includeAttachments?: boolean;
     orderBy?: string;
+    showContent?: boolean;
+    showExcerpt?: boolean;
+    sinceId?: number;
 }
 
 /**
