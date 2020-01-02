@@ -1,6 +1,6 @@
 {
   "name": "ttrss-js-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A primitive implementation of the TinyTinyRSS API in JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
