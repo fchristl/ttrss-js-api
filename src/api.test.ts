@@ -1,0 +1,64 @@
+import {Api} from './api';
+import {ApiImpl} from './api.impl';
+import { expect } from 'chai';
+
+describe('TTRSS API', () => {
+
+    let api: Api;
+    const host = process.env.RSS_HOST!;
+    const username = process.env.RSS_USERNAME!;
+    const password = process.env.RSS_PASSWORD!;
+
+    beforeEach(async () => {
+        api = ApiImpl.build(host);
+        await api.login(username, password);
+    });
+
+    it('should login and logout', async () => {
+        expect(await api.isLoggedIn()).to.be.true;
+        await api.logout();
+        expect(await api.isLoggedIn()).to.be.false;
+    });
+
+    it('should retrieve the number of unread items', async () => {
+        const unread = await api.getUnread();
+        expect(unread).to.be.a('number');
+        expect(unread).to.be.greaterThan(-1);
+    });
+
+    it('should retrieve the categories', async () => {
+        const categories = await api.getCategories();
+        expect(categories.length).to.be.greaterThan(0);
+        expect(categories[0].id).not.to.equal(0);
+        expect(categories[0].title).not.to.be.empty;
+    });
+
+    it('should retrieve feeds in a category', async () => {
+        const firstCategory = (await api.getCategories())[0];
+        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const firstFeed = feeds[0];
+        expect(firstFeed.cat_id).not.to.equal(0);
+        expect(firstFeed.feed_url).not.to.be.empty;
+        expect(firstFeed.title).not.to.be.empty;
+        expect(firstFeed.last_updated).to.be.greaterThan(0);
+    });
+
+    it('should retrieve headlines in a feed', async () => {
+        const firstCategory = (await api.getCategories())[0];
+        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const firstFeed = feeds[1];
+        const headlines = await api.getHeadlinesForFeed(firstFeed.id);
+        expect(headlines.length).to.be.greaterThan(-1);
+    });
+
+    it('should retrieve an article', async () => {
+        const firstCategory = (await api.getCategories())[0];
+        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const firstFeed = feeds[1];
+        const headlines = await api.getHeadlinesForFeed(firstFeed.id);
+        const firstHeadline = headlines[0];
+        const article = await api.getArticle(firstHeadline.id);
+        expect(article.id).to.equal(firstHeadline.id);
+        expect(article.content).not.to.be.empty;
+    })
+});
