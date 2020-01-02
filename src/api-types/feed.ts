@@ -1,3 +1,7 @@
+/**
+ * A feed that lives in a {@link Category} and contains {@link Article|articles}, which can also be retrieved in their
+ * simpler {@link Headline|headline} form.
+ */
 export class Feed {
     id: number = 0;
     feed_url: string = '';

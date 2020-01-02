@@ -1,3 +1,6 @@
+/**
+ * An attachment to an article.
+ */
 export class Attachment {
     content_url: string = '';
     content_type: string = '';
