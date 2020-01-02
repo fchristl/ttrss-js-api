@@ -1,3 +1,7 @@
+[ttrss-js-api - v0.0.2](README.md) › [Globals](globals.md)
+
+# ttrss-js-api - v0.0.2
+
 # TTRSS-JS-API
 This package is a primitive JavaScript/TypeScript implementation of a
 subset of the
@@ -11,11 +15,11 @@ from a TinyTiny RSS instance.
     npm install ttrss-js-api
 
 ## Usage
-The API is exposed through the [API](./docs/interfaces/api.md)
+The API is exposed through the [API](./docs/interfaces/api.html)
 interface.
 
 To build an API instance, use the
-[API Factory](./docs/classes/apifactory.md):
+[API Factory](./docs/classes/apifactory.html):
 
     const ApiFactory = require('ttrss-js-api').ApiFactory;
     const api = ApiFactory.build('http://my-ttrs-instance.com');
@@ -35,7 +39,7 @@ feeds, headlines and articles:
 
 Detail on each entity is available in the API documentation:
 
-- [Category](./docs/classes/category.md)
-- [Feed](./docs/classes/feed.md)
-- [Headline](./docs/classes/headline.md)
-- [Article](./docs/classes/article.md)
+- [Category](./docs/classes/category.html)
+- [Feed](./docs/classes/feed.html)
+- [Headline](./docs/classes/headline.html)
+- [Article](./docs/classes/article.html)

@@ -7,7 +7,7 @@
   "repository": "https://github.com/fchristl/ttrss-js-api",
   "scripts": {
     "test": "mocha -r ts-node/register 'src/**/*.test.ts'",
-    "generate-docs": "typedoc --mode file --exclude \"**/*.impl.ts\" --exclude 'src/api-response-types/*.ts' --exclude '**/api.impl.ts' ",
+    "generate-docs": "typedoc --mode file --plugin typedoc-plugin-markdown --exclude \"**/*.impl.ts\" --exclude 'src/api-response-types/*.ts' --exclude '**/api.impl.ts' ",
     "build": "tsc"
   },
   "keywords": [
@@ -28,6 +28,7 @@
     "mocha": "^6.2.2",
     "ts-node": "^8.5.4",
     "typedoc": "^0.15.6",
+    "typedoc-plugin-markdown": "^2.2.14",
     "typescript": "^3.7.4"
   },
   "dependencies": {
