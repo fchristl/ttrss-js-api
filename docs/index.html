@@ -75,7 +75,32 @@
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
-				<p>To install the API,</p>
+				<pre><code>npm <span class="hljs-keyword">install</span> ttrss-js-api</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>The API is exposed through the <a href="./docs/interfaces/api.html">API</a>
+				interface.</p>
+				<p>To build an API instance, use the
+				<a href="./docs/classes/apifactory.html">API Factory</a>:</p>
+				<pre><code><span class="hljs-keyword">const</span> ApiFactory = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ttrss-js-api'</span>).ApiFactory;
+<span class="hljs-keyword">const</span> api = ApiFactory.build(<span class="hljs-string">'http://my-ttrs-instance.com'</span>);</code></pre><p>You can now login to your TinyTiny RSS instance and retrieve categories,
+				feeds, headlines and articles:</p>
+				<pre><code>(<span class="hljs-name">async</span> () =&gt; {
+    await api.login(<span class="hljs-symbol">'username</span>', <span class="hljs-symbol">'password</span>')<span class="hljs-comment">;</span>
+    const categories = await api.getCategories()<span class="hljs-comment">;</span>
+    const feeds = await api.getFeedsInCategory(<span class="hljs-name">categories</span>[<span class="hljs-name">0</span>].id)<span class="hljs-comment">;</span>
+    const headlines = await api.getHeadlinesForFeed(<span class="hljs-name">feeds</span>[<span class="hljs-name">1</span>].id)<span class="hljs-comment">;</span>
+    const article = await api.getArticle(<span class="hljs-name">headlines</span>[<span class="hljs-name">0</span>].id)<span class="hljs-comment">;</span>
+    console.log(<span class="hljs-name">article.content</span>)<span class="hljs-comment">;</span>
+    await api.logout()<span class="hljs-comment">;</span>
+})()<span class="hljs-comment">;</span></code></pre><p>Detail on each entity is available in the API documentation:</p>
+				<ul>
+					<li><a href="./docs/classes/category.html">Category</a></li>
+					<li><a href="./docs/classes/feed.html">Feed</a></li>
+					<li><a href="./docs/classes/headline.html">Headline</a></li>
+					<li><a href="./docs/classes/article.html">Article</a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -90,9 +115,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
 						<a href="classes/apifactory.html" class="tsd-kind-icon">Api<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/apiimpl.html" class="tsd-kind-icon">Api<wbr>Impl</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/article.html" class="tsd-kind-icon">Article</a>
@@ -111,6 +133,27 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/api.html" class="tsd-kind-icon">Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getunreadresponse.html" class="tsd-kind-icon">Get<wbr>Unread<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isloggedinresult.html" class="tsd-kind-icon">Is<wbr>Logged<wbr>InResult</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loginresult.html" class="tsd-kind-icon">Login<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#getarticleresponse" class="tsd-kind-icon">Get<wbr>Article<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#getcategoriesresponse" class="tsd-kind-icon">Get<wbr>Categories<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#getfeedsresponse" class="tsd-kind-icon">Get<wbr>Feeds<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#getheadlinesresponse" class="tsd-kind-icon">Get<wbr>Headlines<wbr>Response</a>
 					</li>
 				</ul>
 			</nav>
