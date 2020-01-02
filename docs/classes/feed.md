@@ -1,4 +1,4 @@
-[ttrss-js-api - v0.0.3](../README.md) › [Globals](../globals.md) › [Feed](feed.md)
+[ttrss-js-api - v0.0.4](../README.md) › [Globals](../globals.md) › [Feed](feed.md)
 
 # Class: Feed
 
@@ -28,7 +28,7 @@ simpler [headline](headline.md) form.
 
 • **cat_id**: *number* = 0
 
-*Defined in [api-types/feed.ts:9](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L9)*
+*Defined in [api-types/feed.ts:9](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L9)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **feed_url**: *string* = ""
 
-*Defined in [api-types/feed.ts:7](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L7)*
+*Defined in [api-types/feed.ts:7](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L7)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **has_icon**: *boolean* = false
 
-*Defined in [api-types/feed.ts:10](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L10)*
+*Defined in [api-types/feed.ts:10](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L10)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **id**: *number* = 0
 
-*Defined in [api-types/feed.ts:6](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L6)*
+*Defined in [api-types/feed.ts:6](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L6)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **last_updated**: *number* = 0
 
-*Defined in [api-types/feed.ts:11](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L11)*
+*Defined in [api-types/feed.ts:11](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L11)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **order_id**: *number* = 0
 
-*Defined in [api-types/feed.ts:12](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L12)*
+*Defined in [api-types/feed.ts:12](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L12)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **title**: *string* = ""
 
-*Defined in [api-types/feed.ts:13](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L13)*
+*Defined in [api-types/feed.ts:13](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L13)*
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 • **unread**: *number* = 0
 
-*Defined in [api-types/feed.ts:8](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/feed.ts#L8)*
+*Defined in [api-types/feed.ts:8](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/feed.ts#L8)*

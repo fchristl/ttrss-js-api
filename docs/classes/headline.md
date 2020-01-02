@@ -1,4 +1,4 @@
-[ttrss-js-api - v0.0.3](../README.md) › [Globals](../globals.md) › [Headline](headline.md)
+[ttrss-js-api - v0.0.4](../README.md) › [Globals](../globals.md) › [Headline](headline.md)
 
 # Class: Headline
 
@@ -44,7 +44,7 @@ by retrieving the article with the same ID.
 
 • **always_display_attachments**: *boolean* = false
 
-*Defined in [api-types/headline.ts:22](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L22)*
+*Defined in [api-types/headline.ts:22](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L22)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **author**: *string* = ""
 
-*Defined in [api-types/headline.ts:23](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L23)*
+*Defined in [api-types/headline.ts:23](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L23)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **comments_count**: *number* = 0
 
-*Defined in [api-types/headline.ts:20](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L20)*
+*Defined in [api-types/headline.ts:20](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L20)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **comments_link**: *string* = ""
 
-*Defined in [api-types/headline.ts:21](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L21)*
+*Defined in [api-types/headline.ts:21](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L21)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **content**: *string* = ""
 
-*Defined in [api-types/headline.ts:27](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L27)*
+*Defined in [api-types/headline.ts:27](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L27)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **feed_id**: *number* = 0
 
-*Defined in [api-types/headline.ts:16](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L16)*
+*Defined in [api-types/headline.ts:16](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L16)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **feed_title**: *string* = ""
 
-*Defined in [api-types/headline.ts:19](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L19)*
+*Defined in [api-types/headline.ts:19](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L19)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **guid**: *string* = ""
 
-*Defined in [api-types/headline.ts:8](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L8)*
+*Defined in [api-types/headline.ts:8](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L8)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **id**: *number* = 0
 
-*Defined in [api-types/headline.ts:7](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L7)*
+*Defined in [api-types/headline.ts:7](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L7)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **is_updated**: *boolean* = false
 
-*Defined in [api-types/headline.ts:13](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L13)*
+*Defined in [api-types/headline.ts:13](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L13)*
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 • **labels**: *string[]* =  []
 
-*Defined in [api-types/headline.ts:18](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L18)*
+*Defined in [api-types/headline.ts:18](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L18)*
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • **lang**: *string* = "en"
 
-*Defined in [api-types/headline.ts:26](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L26)*
+*Defined in [api-types/headline.ts:26](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L26)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • **link**: *string* = ""
 
-*Defined in [api-types/headline.ts:15](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L15)*
+*Defined in [api-types/headline.ts:15](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L15)*
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 • **marked**: *boolean* = false
 
-*Defined in [api-types/headline.ts:10](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L10)*
+*Defined in [api-types/headline.ts:10](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L10)*
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 • **note**: *string | null* =  null
 
-*Defined in [api-types/headline.ts:25](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L25)*
+*Defined in [api-types/headline.ts:25](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L25)*
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 • **published**: *boolean* = false
 
-*Defined in [api-types/headline.ts:11](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L11)*
+*Defined in [api-types/headline.ts:11](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L11)*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 • **score**: *number* = 0
 
-*Defined in [api-types/headline.ts:24](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L24)*
+*Defined in [api-types/headline.ts:24](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L24)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 • **tags**: *string[]* =  []
 
-*Defined in [api-types/headline.ts:17](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L17)*
+*Defined in [api-types/headline.ts:17](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L17)*
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 • **title**: *string* = ""
 
-*Defined in [api-types/headline.ts:14](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L14)*
+*Defined in [api-types/headline.ts:14](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L14)*
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 • **unread**: *boolean* = false
 
-*Defined in [api-types/headline.ts:9](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L9)*
+*Defined in [api-types/headline.ts:9](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L9)*
 
 ___
 
@@ -204,4 +204,4 @@ ___
 
 • **updated**: *number* = 0
 
-*Defined in [api-types/headline.ts:12](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/headline.ts#L12)*
+*Defined in [api-types/headline.ts:12](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/headline.ts#L12)*

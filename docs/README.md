@@ -1,6 +1,6 @@
-[ttrss-js-api - v0.0.3](README.md) › [Globals](globals.md)
+[ttrss-js-api - v0.0.4](README.md) › [Globals](globals.md)
 
-# ttrss-js-api - v0.0.3
+# ttrss-js-api - v0.0.4
 
 # TTRSS-JS-API
 This package is a primitive JavaScript/TypeScript implementation of a

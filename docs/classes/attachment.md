@@ -1,4 +1,4 @@
-[ttrss-js-api - v0.0.3](../README.md) › [Globals](../globals.md) › [Attachment](attachment.md)
+[ttrss-js-api - v0.0.4](../README.md) › [Globals](../globals.md) › [Attachment](attachment.md)
 
 # Class: Attachment
 
@@ -26,7 +26,7 @@ An attachment to an article.
 
 • **content_type**: *string* = ""
 
-*Defined in [api-types/attachment.ts:6](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L6)*
+*Defined in [api-types/attachment.ts:6](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L6)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **content_url**: *string* = ""
 
-*Defined in [api-types/attachment.ts:5](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L5)*
+*Defined in [api-types/attachment.ts:5](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L5)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **duration**: *string* = ""
 
-*Defined in [api-types/attachment.ts:9](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L9)*
+*Defined in [api-types/attachment.ts:9](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L9)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **height**: *string* = ""
 
-*Defined in [api-types/attachment.ts:11](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L11)*
+*Defined in [api-types/attachment.ts:11](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L11)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **post_id**: *string* = ""
 
-*Defined in [api-types/attachment.ts:7](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L7)*
+*Defined in [api-types/attachment.ts:7](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L7)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **title**: *string* = ""
 
-*Defined in [api-types/attachment.ts:8](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L8)*
+*Defined in [api-types/attachment.ts:8](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L8)*
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 • **width**: *string* = ""
 
-*Defined in [api-types/attachment.ts:10](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api-types/attachment.ts#L10)*
+*Defined in [api-types/attachment.ts:10](https://github.com/fchristl/ttrss-js-api/blob/9b18cd6/src/api-types/attachment.ts#L10)*
