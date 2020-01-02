@@ -18,4 +18,4 @@
 
 • **status**: *boolean*
 
-*Defined in [api-response-types/IsLoggedInResult.ts:2](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/IsLoggedInResult.ts#L2)*
+*Defined in [api-response-types/IsLoggedInResult.ts:2](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/IsLoggedInResult.ts#L2)*

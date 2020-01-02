@@ -38,7 +38,7 @@ Normally, you'll want to proceed like this:
 
 ▸ **getArticle**(`articleId`: number): *Promise‹[Article](../classes/article.md)›*
 
-*Defined in [api.ts:22](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L22)*
+*Defined in [api.ts:22](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L22)*
 
 Get a single [Article](../classes/article.md) by id.
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getCategories**(): *Promise‹[Category](../classes/category.md)[]›*
 
-*Defined in [api.ts:27](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L27)*
+*Defined in [api.ts:27](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L27)*
 
 Get all categories.
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **getFeedsInCategory**(`categoryId`: number): *Promise‹[Feed](../classes/feed.md)[]›*
 
-*Defined in [api.ts:33](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L33)*
+*Defined in [api.ts:33](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L33)*
 
 Get all feeds in the given category.
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **getHeadlinesForFeed**(`feedId`: number): *Promise‹[Headline](../classes/headline.md)[]›*
 
-*Defined in [api.ts:39](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L39)*
+*Defined in [api.ts:39](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L39)*
 
 Get all headlines for a given feed.
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **getUnread**(): *Promise‹number›*
 
-*Defined in [api.ts:40](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L40)*
+*Defined in [api.ts:40](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L40)*
 
 **Returns:** *Promise‹number›*
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **isLoggedIn**(): *Promise‹boolean›*
 
-*Defined in [api.ts:41](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L41)*
+*Defined in [api.ts:41](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L41)*
 
 **Returns:** *Promise‹boolean›*
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **login**(`username`: string, `password`: string): *Promise‹void›*
 
-*Defined in [api.ts:42](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L42)*
+*Defined in [api.ts:42](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L42)*
 
 **Parameters:**
 
@@ -141,6 +141,6 @@ ___
 
 ▸ **logout**(): *Promise‹void›*
 
-*Defined in [api.ts:43](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api.ts#L43)*
+*Defined in [api.ts:43](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L43)*
 
 **Returns:** *Promise‹void›*

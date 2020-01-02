@@ -33,7 +33,7 @@
 
 Ƭ **GetArticleResponse**: *[Article](classes/article.md)[]*
 
-*Defined in [api-response-types/GetArticleResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/GetArticleResponse.ts#L3)*
+*Defined in [api-response-types/GetArticleResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/GetArticleResponse.ts#L3)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **GetCategoriesResponse**: *[Category](classes/category.md)[]*
 
-*Defined in [api-response-types/GetCategoriesResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/GetCategoriesResponse.ts#L3)*
+*Defined in [api-response-types/GetCategoriesResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/GetCategoriesResponse.ts#L3)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 Ƭ **GetFeedsResponse**: *[Feed](classes/feed.md)[]*
 
-*Defined in [api-response-types/GetFeedsResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/GetFeedsResponse.ts#L3)*
+*Defined in [api-response-types/GetFeedsResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/GetFeedsResponse.ts#L3)*
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 Ƭ **GetHeadlinesResponse**: *[Headline](classes/headline.md)[]*
 
-*Defined in [api-response-types/GetHeadlinesResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/GetHeadlinesResponse.ts#L3)*
+*Defined in [api-response-types/GetHeadlinesResponse.ts:3](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/GetHeadlinesResponse.ts#L3)*

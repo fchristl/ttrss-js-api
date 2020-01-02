@@ -20,7 +20,7 @@ Factory that builds an [Api](../interfaces/api.md) instance.
 
 ▸ **build**(`endpoint`: string): *[Api](../interfaces/api.md)*
 
-*Defined in [api-factory.ts:11](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-factory.ts#L11)*
+*Defined in [api-factory.ts:11](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-factory.ts#L11)*
 
 Build a new TinyTiny RSS API instance that uses the given endpoint URL.
 

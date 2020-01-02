@@ -19,7 +19,7 @@
 
 • **api_level**: *number*
 
-*Defined in [api-response-types/LoginResult.ts:3](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/LoginResult.ts#L3)*
+*Defined in [api-response-types/LoginResult.ts:3](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/LoginResult.ts#L3)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **session_id**: *string*
 
-*Defined in [api-response-types/LoginResult.ts:2](https://github.com/fchristl/ttrss-js-api/blob/79fe3ba/src/api-response-types/LoginResult.ts#L2)*
+*Defined in [api-response-types/LoginResult.ts:2](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api-response-types/LoginResult.ts#L2)*
