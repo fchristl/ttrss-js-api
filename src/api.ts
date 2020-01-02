@@ -25,7 +25,7 @@ export interface GetHeadlinesOptions {
  * 1. Call {@link login} to open a session
  * 2. Get all categories using {@link getCategories}
  * 3. Get all feeds in a category using {@link getFeeds}
- * 4. Get all headlines in a feed using {@link getHeadlinesForFeed}
+ * 4. Get all headlines in a feed using {@link getHeadlines}
  * 5. Note the headline's {@link Headline.id|ID} and use it to get the full article using the same ID and calling
  *    {@link getArticle}.
  */
