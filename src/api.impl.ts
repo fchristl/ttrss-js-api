@@ -6,7 +6,7 @@ import {
     IsLoggedInResult,
     LoginResult
 } from './api-response-types';
-import {Api} from './api';
+import {Api, GetCategoriesOptions, GetFeedsOptions, GetHeadlinesOptions} from './api';
 import {Article, Category, Feed, Headline} from './api-types';
 import {GetCategoriesResponse} from './api-response-types/GetCategoriesResponse';
 import {GetHeadlinesResponse} from './api-response-types/GetHeadlinesResponse';
@@ -34,8 +34,14 @@ export class ApiImpl implements Api {
         return article;
     }
 
-    async getCategories(): Promise<Category[]> {
-        const categories = await this.makeRequest<GetCategoriesResponse>('getCategories');
+    async getCategories(options?: GetCategoriesOptions): Promise<Category[]> {
+        const requestOptions: any = {};
+
+        if (options?.unreadOnly != null) {
+            requestOptions.unread_only = options.unreadOnly;
+        }
+
+        const categories = await this.makeRequest<GetCategoriesResponse>('getCategories', requestOptions);
         // categories, weirdly, might come back with a string ID instead of a number. That's why we
         // transform them before returning.
         for (const category of categories) {
@@ -44,12 +50,33 @@ export class ApiImpl implements Api {
         return categories;
     }
 
-    async getFeedsInCategory(categoryId: number): Promise<Feed[]> {
-        return this.makeRequest<GetFeedsResponse>('getFeeds', {cat_id: categoryId});
+    async getFeeds(options?: GetFeedsOptions): Promise<Feed[]> {
+        const requestOptions: any = {};
+
+        if (options?.categoryId != null) {
+            requestOptions.cat_id = options.categoryId;
+        }
+        if (options?.unreadOnly != null) {
+            requestOptions.unread_only = options.unreadOnly;
+        }
+
+        return this.makeRequest<GetFeedsResponse>('getFeeds', requestOptions);
     }
 
-    async getHeadlinesForFeed(feedId: number): Promise<Headline[]> {
-        const headlines = await this.makeRequest<GetHeadlinesResponse>('getHeadlines', {feed_id: feedId});
+    async getHeadlines(options?: GetHeadlinesOptions): Promise<Headline[]> {
+        const requestOptions: any = {};
+
+        if (options?.feedId != null) {
+            requestOptions.feed_id = options.feedId;
+        }
+        if (options?.orderBy != null) {
+            requestOptions.order_by = options.orderBy;
+        }
+        if (options?.sinceId != null) {
+            requestOptions.since_id = options.sinceId;
+        }
+
+        const headlines = await this.makeRequest<GetHeadlinesResponse>('getHeadlines', requestOptions);
         for (const headline of headlines) {
             headline.feed_id = +headline.feed_id;
         }

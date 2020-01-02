@@ -1,5 +1,20 @@
 import {Article, Category, Feed, Headline} from './api-types';
 
+export interface GetCategoriesOptions {
+    unreadOnly?: boolean;
+}
+
+export interface GetFeedsOptions {
+    categoryId?: number;
+    unreadOnly?: boolean;
+}
+
+export interface GetHeadlinesOptions {
+    feedId?: number;
+    sinceId?: number;
+    orderBy?: string;
+}
+
 /**
  * This interface describes how to call the TinyTiny RSS API.
  *
@@ -9,7 +24,7 @@ import {Article, Category, Feed, Headline} from './api-types';
  *
  * 1. Call {@link login} to open a session
  * 2. Get all categories using {@link getCategories}
- * 3. Get all feeds in a category using {@link getFeedsInCategory}
+ * 3. Get all feeds in a category using {@link getFeeds}
  * 4. Get all headlines in a feed using {@link getHeadlinesForFeed}
  * 5. Note the headline's {@link Headline.id|ID} and use it to get the full article using the same ID and calling
  *    {@link getArticle}.
@@ -22,21 +37,19 @@ export interface Api {
     getArticle(articleId: number): Promise<Article>;
 
     /**
-     * Get all categories.
+     * Get categories based on the given options.
      */
-    getCategories(): Promise<Category[]>;
+    getCategories(options?: GetCategoriesOptions): Promise<Category[]>;
 
     /**
-     * Get all feeds in the given category.
-     * @param categoryId
+     * Get feeds based on the given options. If no options are provided, all feeds are retrieved.
      */
-    getFeedsInCategory(categoryId: number): Promise<Feed[]>;
+    getFeeds(options?: GetFeedsOptions): Promise<Feed[]>;
 
     /**
-     * Get all headlines for a given feed.
-     * @param feedId
+     * Get headlines based on the given options.
      */
-    getHeadlinesForFeed(feedId: number): Promise<Headline[]>;
+    getHeadlines(options?: GetHeadlinesOptions): Promise<Headline[]>;
     getUnread(): Promise<number>;
     isLoggedIn(): Promise<boolean>;
     login(username: string, password: string): Promise<void>;

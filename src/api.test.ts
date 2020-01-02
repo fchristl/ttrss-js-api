@@ -33,11 +33,16 @@ describe('TTRSS API', () => {
         expect(categories[0].title).not.to.be.empty;
     });
 
+    it('should retrieve all feeds', async () => {
+        const feeds = await api.getFeeds();
+        expect(feeds.length).to.be.greaterThan(0);
+    });
+
     it('should retrieve feeds in a category', async () => {
         const firstCategory = (await api.getCategories())[0];
-        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const feeds = await api.getFeeds({categoryId: firstCategory.id});
         const firstFeed = feeds[0];
-        expect(firstFeed.cat_id).not.to.equal(0);
+        expect(firstFeed.cat_id).to.equal(firstCategory.id);
         expect(firstFeed.feed_url).not.to.be.empty;
         expect(firstFeed.title).not.to.be.empty;
         expect(firstFeed.last_updated).to.be.greaterThan(0);
@@ -45,17 +50,17 @@ describe('TTRSS API', () => {
 
     it('should retrieve headlines in a feed', async () => {
         const firstCategory = (await api.getCategories())[0];
-        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const feeds = await api.getFeeds({categoryId: firstCategory.id});
         const firstFeed = feeds[1];
-        const headlines = await api.getHeadlinesForFeed(firstFeed.id);
+        const headlines = await api.getHeadlines({feedId: firstFeed.id});
         expect(headlines.length).to.be.greaterThan(-1);
     });
 
     it('should retrieve an article', async () => {
         const firstCategory = (await api.getCategories())[0];
-        const feeds = await api.getFeedsInCategory(firstCategory.id);
+        const feeds = await api.getFeeds({categoryId: firstCategory.id});
         const firstFeed = feeds[1];
-        const headlines = await api.getHeadlinesForFeed(firstFeed.id);
+        const headlines = await api.getHeadlines({feedId: firstFeed.id});
         const firstHeadline = headlines[0];
         const article = await api.getArticle(firstHeadline.id);
         expect(article.id).to.equal(firstHeadline.id);

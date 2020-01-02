@@ -1,4 +1,4 @@
-[ttrss-js-api - v0.0.2](../README.md) › [Globals](../globals.md) › [Api](api.md)
+[ttrss-js-api - v0.0.3](../README.md) › [Globals](../globals.md) › [Api](api.md)
 
 # Interface: Api
 
@@ -10,8 +10,8 @@ Normally, you'll want to proceed like this:
 
 1. Call [login](api.md#login) to open a session
 2. Get all categories using [getCategories](api.md#getcategories)
-3. Get all feeds in a category using [getFeedsInCategory](api.md#getfeedsincategory)
-4. Get all headlines in a feed using [getHeadlinesForFeed](api.md#getheadlinesforfeed)
+3. Get all feeds in a category using [getFeeds](api.md#getfeeds)
+4. Get all headlines in a feed using {@link getHeadlinesForFeed}
 5. Note the headline's [ID](../classes/headline.md#id) and use it to get the full article using the same ID and calling
    [getArticle](api.md#getarticle).
 
@@ -25,8 +25,8 @@ Normally, you'll want to proceed like this:
 
 * [getArticle](api.md#getarticle)
 * [getCategories](api.md#getcategories)
-* [getFeedsInCategory](api.md#getfeedsincategory)
-* [getHeadlinesForFeed](api.md#getheadlinesforfeed)
+* [getFeeds](api.md#getfeeds)
+* [getHeadlines](api.md#getheadlines)
 * [getUnread](api.md#getunread)
 * [isLoggedIn](api.md#isloggedin)
 * [login](api.md#login)
@@ -38,7 +38,7 @@ Normally, you'll want to proceed like this:
 
 ▸ **getArticle**(`articleId`: number): *Promise‹[Article](../classes/article.md)›*
 
-*Defined in [api.ts:22](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L22)*
+*Defined in [api.ts:37](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L37)*
 
 Get a single [Article](../classes/article.md) by id.
 
@@ -54,47 +54,53 @@ ___
 
 ###  getCategories
 
-▸ **getCategories**(): *Promise‹[Category](../classes/category.md)[]›*
+▸ **getCategories**(`options?`: [GetCategoriesOptions](getcategoriesoptions.md)): *Promise‹[Category](../classes/category.md)[]›*
 
-*Defined in [api.ts:27](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L27)*
+*Defined in [api.ts:42](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L42)*
 
-Get all categories.
+Get categories based on the given options.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options?` | [GetCategoriesOptions](getcategoriesoptions.md) |
 
 **Returns:** *Promise‹[Category](../classes/category.md)[]›*
 
 ___
 
-###  getFeedsInCategory
+###  getFeeds
 
-▸ **getFeedsInCategory**(`categoryId`: number): *Promise‹[Feed](../classes/feed.md)[]›*
+▸ **getFeeds**(`options?`: [GetFeedsOptions](getfeedsoptions.md)): *Promise‹[Feed](../classes/feed.md)[]›*
 
-*Defined in [api.ts:33](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L33)*
+*Defined in [api.ts:47](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L47)*
 
-Get all feeds in the given category.
+Get feeds based on the given options. If no options are provided, all feeds are retrieved.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`categoryId` | number |   |
+Name | Type |
+------ | ------ |
+`options?` | [GetFeedsOptions](getfeedsoptions.md) |
 
 **Returns:** *Promise‹[Feed](../classes/feed.md)[]›*
 
 ___
 
-###  getHeadlinesForFeed
+###  getHeadlines
 
-▸ **getHeadlinesForFeed**(`feedId`: number): *Promise‹[Headline](../classes/headline.md)[]›*
+▸ **getHeadlines**(`options?`: [GetHeadlinesOptions](getheadlinesoptions.md)): *Promise‹[Headline](../classes/headline.md)[]›*
 
-*Defined in [api.ts:39](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L39)*
+*Defined in [api.ts:52](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L52)*
 
-Get all headlines for a given feed.
+Get headlines based on the given options.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`feedId` | number |   |
+Name | Type |
+------ | ------ |
+`options?` | [GetHeadlinesOptions](getheadlinesoptions.md) |
 
 **Returns:** *Promise‹[Headline](../classes/headline.md)[]›*
 
@@ -104,7 +110,7 @@ ___
 
 ▸ **getUnread**(): *Promise‹number›*
 
-*Defined in [api.ts:40](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L40)*
+*Defined in [api.ts:53](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L53)*
 
 **Returns:** *Promise‹number›*
 
@@ -114,7 +120,7 @@ ___
 
 ▸ **isLoggedIn**(): *Promise‹boolean›*
 
-*Defined in [api.ts:41](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L41)*
+*Defined in [api.ts:54](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L54)*
 
 **Returns:** *Promise‹boolean›*
 
@@ -124,7 +130,7 @@ ___
 
 ▸ **login**(`username`: string, `password`: string): *Promise‹void›*
 
-*Defined in [api.ts:42](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L42)*
+*Defined in [api.ts:55](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L55)*
 
 **Parameters:**
 
@@ -141,6 +147,6 @@ ___
 
 ▸ **logout**(): *Promise‹void›*
 
-*Defined in [api.ts:43](https://github.com/fchristl/ttrss-js-api/blob/8dc74c7/src/api.ts#L43)*
+*Defined in [api.ts:56](https://github.com/fchristl/ttrss-js-api/blob/b657f8c/src/api.ts#L56)*
 
 **Returns:** *Promise‹void›*

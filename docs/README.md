@@ -1,6 +1,6 @@
-[ttrss-js-api - v0.0.2](README.md) › [Globals](globals.md)
+[ttrss-js-api - v0.0.3](README.md) › [Globals](globals.md)
 
-# ttrss-js-api - v0.0.2
+# ttrss-js-api - v0.0.3
 
 # TTRSS-JS-API
 This package is a primitive JavaScript/TypeScript implementation of a
@@ -30,8 +30,8 @@ feeds, headlines and articles:
     (async () => {
         await api.login('username', 'password');
         const categories = await api.getCategories();
-        const feeds = await api.getFeedsInCategory(categories[0].id);
-        const headlines = await api.getHeadlinesForFeed(feeds[1].id);
+        const feeds = await api.getFeeds({categoryId: categories[0].id});
+        const headlines = await api.getHeadlines({feedId: feeds[1].id});
         const article = await api.getArticle(headlines[0].id);
         console.log(article.content);
         await api.logout();
