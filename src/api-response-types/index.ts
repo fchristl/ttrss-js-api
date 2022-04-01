@@ -5,3 +5,4 @@ export * from './GetHeadlinesResponse';
 export * from './GetUnreadResponse';
 export * from './IsLoggedInResult';
 export * from './LoginResult';
+export * from './SubscribeToFeedResult';

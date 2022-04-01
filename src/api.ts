@@ -1,4 +1,4 @@
-import {Article, Category, Feed, Headline} from './api-types';
+import {Article, Category, Feed, Headline, Status} from './api-types';
 
 export interface GetCategoriesOptions {
     unreadOnly?: boolean;
@@ -16,6 +16,13 @@ export interface GetHeadlinesOptions {
     showContent?: boolean;
     showExcerpt?: boolean;
     sinceId?: number;
+}
+
+export interface SubscribeToFeedOptions {
+    feed_url ?: string;
+    category_id ?: number;
+    login?: string;
+    password ?: string;
 }
 
 /**
@@ -54,6 +61,7 @@ export interface Api {
      */
     getHeadlines(options?: GetHeadlinesOptions): Promise<Headline[]>;
     getUnread(): Promise<number>;
+    subscribeToFeed(options?: SubscribeToFeedOptions): Promise<Status>;
     isLoggedIn(): Promise<boolean>;
     login(username: string, password: string): Promise<void>;
     logout(): Promise<void>;

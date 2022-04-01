@@ -20,6 +20,13 @@ describe('TTRSS API', () => {
         expect(await api.isLoggedIn()).to.be.false;
     });
 
+    it('should subscribe to feed', async () => {
+        const firstCategory = (await api.getCategories())[0];
+        const feed_url = "https://www.4sbooks.com/feed"
+        const status = await api.subscribeToFeed({feed_url: feed_url, category_id: firstCategory.id});
+        expect(status.code).to.be.lessThan(2);
+    });
+
     it('should retrieve the number of unread items', async () => {
         const unread = await api.getUnread();
         expect(unread).to.be.a('number');
