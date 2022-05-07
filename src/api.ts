@@ -1,5 +1,5 @@
 import {Article, Category, Feed, Headline, Status} from './api-types';
-import UnubscribeFeedResult from './api-response-types';
+import {UnsubscribeFeedResult} from './api-response-types';
 
 export interface GetCategoriesOptions {
     unreadOnly?: boolean;
@@ -67,7 +67,7 @@ export interface Api {
     getHeadlines(options?: GetHeadlinesOptions): Promise<Headline[]>;
     getUnread(): Promise<number>;
     subscribeToFeed(options?: SubscribeToFeedOptions): Promise<Status>;
-    unsubscribeFeed(options?: UnsubscribeFeedOptions): Promise<UnubscribeFeedResult>;
+    unsubscribeFeed(options?: UnsubscribeFeedOptions): Promise<UnsubscribeFeedResult>;
     isLoggedIn(): Promise<boolean>;
     login(username: string, password: string): Promise<void>;
     logout(): Promise<void>;
