@@ -4,10 +4,11 @@ import {
     GetFeedsResponse,
     GetUnreadResponse,
     SubscribeToFeedResult,
+    UnsubscribeFeedResult,
     IsLoggedInResult,
     LoginResult
 } from './api-response-types';
-import {Api, GetCategoriesOptions, GetFeedsOptions, GetHeadlinesOptions, SubscribeToFeedOptions} from './api';
+import {Api, GetCategoriesOptions, GetFeedsOptions, GetHeadlinesOptions, SubscribeToFeedOptions, UnsubscribeFeedOptions} from './api';
 import {Article, Category, Feed, Headline, Status} from './api-types';
 import {GetCategoriesResponse} from './api-response-types/GetCategoriesResponse';
 import {GetHeadlinesResponse} from './api-response-types/GetHeadlinesResponse';
@@ -95,6 +96,10 @@ export class ApiImpl implements Api {
 
     async subscribeToFeed(options?: SubscribeToFeedOptions): Promise<Status> {
         return (await this.makeRequest<SubscribeToFeedResult>('subscribeToFeed', options)).status;
+    }
+
+    async unsubscribeFeed(options?: UnsubscribeFeedOptions): Promise<UnsubscribeFeedResult> {
+        return (await this.makeRequest<UnsubscribeFeedResult>('unsubscribeFeed', options));
     }
 
     async getUnread(): Promise<number> {
