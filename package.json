@@ -1,5 +1,5 @@
 {
-  "name": "ttrss-js-api",
+  "name": "ttrss-js-api2",
   "version": "0.0.5",
   "description": "A primitive implementation of the TinyTinyRSS API in JavaScript/TypeScript",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
   "scripts": {
     "test": "mocha -r ts-node/register 'src/**/*.test.ts'",
     "generate-docs": "typedoc --mode file --plugin typedoc-plugin-markdown --exclude \"**/*.impl.ts\" --exclude 'src/api-response-types/*.ts' --exclude '**/api.impl.ts' ",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "tsc && npm publish"
   },
   "keywords": [
     "ttrss",
